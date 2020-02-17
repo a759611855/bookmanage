@@ -106,7 +106,7 @@ public class BookController {
     book.setSource(request.getSource());
     book.setTitle(request.getTittle());
     book.setUserName(request.getUserName());
-    book.setPushDate(Long.parseLong(LocalDate.now().toString().replaceAll("-","")));
+    book.setPushDate(request.getPushDate());
     try {
       bookModel.saveBook(book);
       jsonObject.put(Constant.RESULT, Constant.SUCCESS);

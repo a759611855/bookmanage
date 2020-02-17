@@ -18,4 +18,5 @@ public class SubmitRequest {
   private String authorName;
   private String source;
   private List<String> fileList;
+  private Long pushDate;
 }
